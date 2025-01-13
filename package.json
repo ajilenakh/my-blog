@@ -1,0 +1,3 @@
+"scripts": {
+  "build": "hugo --baseURL https://blog-sigma-eosin-66.vercel.app/"
+}
