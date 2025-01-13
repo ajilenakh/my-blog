@@ -1,4 +1,4 @@
-baseURL = "https://blog-sigma-eosin-66.vercel.app/"
+baseURL = "https://blog-git-development-ajilenakhs-projects.vercel.app/"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableRobotsTXT = true
@@ -34,7 +34,7 @@ title = "Ajilenakh"
     </script>
   """
 
-  description = "Sky above, sand below and peace within"
+  description = "Documenting my DevOps learning journey with insights and resources."
   footer = "Ajilenakh"
   metaKeywords = ["blog", "Ajilenakh", "hugo"]
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
