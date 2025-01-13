@@ -2,9 +2,9 @@
   "name": "my-blog",
   "version": "1.0.0",
   "scripts": {
-    "build": "hugo --baseURL https://blog-sigma-eosin-66.vercel.app/"
+    "build": "hugo --baseURL https://blog-sigma-eosin-66.vercel.app/ server"
   },
   "dependencies": {
-    
+
   }
 }
