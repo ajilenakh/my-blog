@@ -34,7 +34,7 @@ title = "Ajilenakh"
     </script>
   """
 
-  description = "Sky above, sand below and peace within"
+  description = "Documenting my DevOps learning journey with insights and resources."
   footer = "Ajilenakh"
   metaKeywords = ["blog", "Ajilenakh", "hugo"]
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
