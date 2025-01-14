@@ -2,9 +2,9 @@
 date: 2025-01-13
 description: "This project focuses on learning CI/CD automation for Java web applications using Spring Boot, version control, and continuous integration tools to streamline the development and deployment process."
 image: "/images/cicd/cicd.png"
-lastmod: 2025-01-13
+lastmod: 2025-01-14
 showTableOfContents: True
-tags: ["DevOps", "Tomcat", "Java", "Web Application", "Deployment"]
+tags: ["DevOps", "Automation", "CI/CD" , "Java", "Web Application", "Deployment"]
 title: "Automating Java Web Application Deployment with CI/CD and Spring Boot"
 type: "post"
 ---
