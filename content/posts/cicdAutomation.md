@@ -2,7 +2,7 @@
 date: 2025-01-13
 description: "This project focuses on learning CI/CD automation for Java web applications using Spring Boot, version control, and continuous integration tools to streamline the development and deployment process."
 image: "/images/cicd/cicd.png"
-lastmod: 2025-01-14
+lastmod: 2025-01-15
 showTableOfContents: True
 tags: ["DevOps", "Automation", "CI/CD" , "Java", "Web Application", "Deployment"]
 title: "Automating Java Web Application Deployment with CI/CD and Spring Boot"
@@ -19,7 +19,7 @@ The Spring Boot application is set up, and the next steps focus on automating th
 ### To-Do List
 
 1. **Decide on the Application**  
-   Identify the type of Java web application to develop (e.g., a simple blog, task manager, or REST API).
+   Develop a **simple REST API** using **Spring Boot** that provides basic CRUD (Create, Read, Update, Delete) operations for a resource (e.g., a "Task" or "User").
 
 2. **Version Control**  
    Host the application code on GitHub for collaborative development and version tracking.
@@ -28,7 +28,7 @@ The Spring Boot application is set up, and the next steps focus on automating th
    Build the application and package it as a **JAR (Java ARchive)** file. Since Spring Boot includes an **embedded Tomcat** server, this JAR file will contain everything needed to run the application, including the server.
 
 4. **Deployment**  
-   Deploy the JAR file directly to the server (e.g., EC2 instance, cloud server, or local server) and run it using the `java -jar` command. The embedded Tomcat server will automatically start when the application is run.
+   Deploy the JAR file directly to a local server and run it using the `java -jar` command. The embedded Tomcat server will automatically start when the application is run.
 
 5. **Automation Setup**  
    Automate deployment workflows using tools like **Jenkins**, **GitHub Actions**, or a custom script. The goal is to ensure that every time there is a change in the codebase, the application is automatically built, tested, and deployed to the appropriate environment.
