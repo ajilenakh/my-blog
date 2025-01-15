@@ -4,7 +4,7 @@ Welcome to my blog repository! This is a personal blog built using **Hugo**, a f
 
 ## Content
 - [Features](#Features)
-- [Technologies Used](#Technologies_Used)
+- [Technologies Used](#TechnologiesUsed)
 - [Setup](#Setup)
 - [Contribution](#Contributing)
 - [Tip](#Tip)
