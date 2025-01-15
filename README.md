@@ -4,7 +4,7 @@ Welcome to my blog repository! This is a personal blog built using **Hugo**, a f
 
 ## Content
 - [Features](#Features)
-- [Technologies Used](#TechnologiesUsed)
+- [Technologies Used](#Technologies_Used)
 - [Setup](#Setup)
 - [Contribution](#Contributing)
 - [Tip](#Tip)
@@ -16,7 +16,7 @@ Welcome to my blog repository! This is a personal blog built using **Hugo**, a f
 - **Hugo Themes**: Uses the [**Gokarna**](https://github.com/gokarna-theme/gokarna-hugo) Hugo theme for a beautiful and clean layout.
 - **Easy Deployment**: Can be easily deployed on hosting platforms like Vercel or Netlify.
 
-## Technologies Used
+## Technologies_Used
 
 - **Hugo**: The static site generator used for building the site.
 - **Markdown**: Content for the blog posts is written using Markdown.
