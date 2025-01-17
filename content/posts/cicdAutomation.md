@@ -13,4 +13,4 @@ At this stage, I don't have much experience with DevOps. My previous experience 
 
 I designed a basic layout for an online library web application. Then, I created a development branch in GitHub and configured two `application.properties` files for different environments—one for development and one for production. After that, I pushed the code to GitHub and set up a local Jenkins instance on my machine to automate the deployment process. I deployed two instances of the web application, each corresponding to one of the branches.
 
-For more detailed information, check out my [DevOps Beginner Project](https://ajilenakh.verce.app/projects/devops-begnning/).
+For more detailed information, check out my [DevOps Beginner Project](https://ajilenakh.vercel.app/projects/devops-begnning/).
