@@ -10,7 +10,7 @@ off the rip this just me trying to get my hands dirty with the devops world this
 ## Jenkins Setup
 setting jenking was not that complicated. I would suggest read the jenkins documentation but i followed this [guide](https://www.atlantic.net/dedicated-server-hosting/how-to-install-jenkins-on-arch-linux/) for setting on my arch.
 after that i created a user  and installed the nessary plugins
-i setup up credintials for github and [[static/images/cicd/cicd.png]]
+i setup up credintials for github and [cicd](static/images/cicd/cicd.png)
 
 Check out the repository:  
 [GitHub Repository](https://github.com/ajilenakh/book-library.git)
