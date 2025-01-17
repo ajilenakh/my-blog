@@ -119,5 +119,5 @@ Additionally, I set up two different environments using `application.properties`
     sh "echo 'spring.profiles.active=dev' >> src/main/resources/application.properties"
 ```
 
-For more details, check out our repository:  
+Check out repository:  
 [GitHub Repository](https://github.com/ajilenakh/book-library.git)
