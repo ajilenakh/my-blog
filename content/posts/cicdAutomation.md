@@ -4,7 +4,7 @@ description: "Tier to get my feet wet with the devops world by using Jenkins and
 image: "/images/cicd/cicd.png"
 lastmod: 2025-01-16
 showTableOfContents: True
-tags: ["DevOps", "Automation", "CI/CD", "Java", "Web Application", "Deployment"]
+tags: ["DevOps", "Automation", "CI/CD", "Jenkins", "Web Application", "Deployment"]
 title: "Automating Java Web Application Deployment with CI/CD using GitHub and Jenkins"
 type: "post"
 ---
