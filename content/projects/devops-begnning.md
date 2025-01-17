@@ -111,9 +111,12 @@ pipeline {
 
 ### Conclusion
 
-After all this, I realized that Jenkins is not actually designed for running or deploying Spring Boot applications directly. It's primarily intended for automating tasks like testing and building. I was about to implement a webhook for automatic deployment, but I ran into issues with port forwarding for my Jenkins instance. You can read more about this problem [here](https://community.jenkins.io/t/in-progress-infinite-loop-while-run-spring-boot/18289).
+After working through the setup, I realized that Jenkins isn't really designed for directly deploying or running Spring Boot applications. While it's great for automating tasks like testing and building, it's not well-suited for managing live Spring Boot application processes. I ran into an issue where Jenkins got stuck in an "in-progress" infinite loop when trying to run the Spring Boot app. This happened because Jenkins expects the process to complete, but Spring Boot’s embedded server keeps the application running, preventing Jenkins from finishing the task. You can read more about this issue in the [Jenkins community forum](https://community.jenkins.io/t/in-progress-infinite-loop-while-run-spring-boot/18289).
 
-Additionally, I set up two different environments using `application.properties` in Spring Boot. You can learn more about configuring multiple property files in Spring Boot [here](https://codesarray.com/view/Multiple-application-properties-file-in-spring-boot). In the development pipeline script, I added the line `spring.profiles.active=dev` to specify the active profile for the development environment.
+I had planned to implement webhooks to trigger automatic deployments, by port-forwarding my Jenkins instance, I decided that it would be too complex to continue down this path without further DevOps experience. It's clear that I need to focus more on learning the fundamentals of DevOps before tackling more advanced topics like webhooks and deployment automation.
+
+On a positive note, I also set up two different environments using `application.properties` in Spring Boot. You can learn more about configuring multiple property files in Spring Boot [here](https://codesarray.com/view/Multiple-application-properties-file-in-spring-boot). In my development pipeline script, I added `spring.profiles.active=dev` to specify the active profile for the development environment.
+
 
 ```grovvy
     sh "echo 'spring.profiles.active=dev' >> src/main/resources/application.properties"
