@@ -1,4 +1,4 @@
-baseURL = "https://blog-git-development-ajilenakhs-projects.vercel.app/"
+baseURL = "/"
 defaultContentLanguage = "en"
 # Automatically generate robots.txt
 enableRobotsTXT = true
