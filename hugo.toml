@@ -1,4 +1,4 @@
-baseURL = "https://ajilenakh.vercel.app/"
+baseURL = "/"
 defaultContentLanguage = "en"
 # Automatically generate robots.txt
 enableRobotsTXT = true
