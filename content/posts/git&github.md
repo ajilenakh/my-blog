@@ -116,3 +116,5 @@ After the commit, if you run git status, it will show you that there is nothing 
 we will read after git commit messages later
 now if we do git status again we can see 
 ![git_status](/images/git&github/gitstatus3.png)
+
+**NEW CONTENT SOON**
