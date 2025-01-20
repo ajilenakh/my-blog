@@ -20,7 +20,6 @@ In this post, we’ll cover the essentials of Git and dive into some advanced to
 - What a **repository** is and the difference between **local** and **remote** repositories
 - How to work with **pull requests** and **pushes** to manage code changes
 - The basics of **staging**, **stashing**, and other useful Git commands
-- Advanced concepts like **rebasing**, and how to resolve merge conflicts
 
 By the end of this guide, you'll have a strong understanding of how Git works and how to use GitHub to collaborate with others efficiently.
 
@@ -116,3 +115,85 @@ After the commit, if you run git status, it will show you that there is nothing 
 we will read after git commit messages later
 now if we do git status again we can see 
 ![git_status](/images/git&github/gitstatus3.png)
+
+## Branches
+Now that you're familiar with making commits, it's time to explore another powerful feature of Git: branches. In this section, we'll dive into what branches are, why they're essential, and how to use them effectively.
+
+### What Are Branches?
+In Git, a branch is like a separate line of development for your codebase. It allows you to work on new features or fix bugs without affecting the main code that's currently being used (i.e., the "master" branch). Think of it as creating a temporary copy of your project where you can experiment and make changes without worrying about breaking anything.
+
+### Why Are Branches Essential?
+Branching is crucial in Git because it enables:
+- Feature development: Create a new branch for each feature or bug fix, allowing you to work on separate tasks independently.
+
+- Experimentation: Try out new ideas or approaches without affecting the main codebase.
+
+- Version control: Keep track of changes and maintain a record of all modifications made during the development process.
+
+### Using branches
+We have learn the therotical part of the branches and how awsome they are now lets implement them follow along:
+
+- First we will do is check how man branches there are by running the command 
+```bash
+git branch
+```
+Assuming u are following the guide then u will see that is only one branch and it will be shown like this  `*master` or `*main` cuz we have not creadted any bracnhes yet, the `*`is always on the active branch
+
+- Lets make a branch named feature, u can use different commands to make a git branch, none of them right or wrong way of making branches. lets use two different commands to make two branches 
+```bash
+git branch feature
+git checkout -b bug-fix
+```
+
+After running the command `git branch` again, you'll notice that there are now three branches, and you're currently on the `bug-fix` branch. 
+
+This is because we used the `git checkout` (or `git switch`) command to switch branches. Additionally, when you use the `-b` argument with `git checkout` (i.e., `git checkout -b branch-name`), it not only creates a new branch but also switches to it immediately.
+
+## Merging branches
+When you complete your work on a branches(edit the content in the branch), you might want to incorporate its changes into another branch (e.g., merging `feature` into `master`). To do this:
+
+First switch to the branch you want to merge into. for examle:
+
+```bash
+git checkout master
+```
+Then, use the git merge command to merge the desired branch:
+```bash
+git merge feature
+```
+Git will apply the changes from feature to master. If there are no conflicts, the  process will complete smooothly, and git will generate a commit for the merge.
+
+## Resolving Merge Conflicts
+Sometimes, when merging beanches, you might encounter `merge conflicts`. This happens when changes in two branches overlap or conflict with each other. Git will notify you about the files with conflicts and pause the merge until you resolve them.
+To resolve merge conflict:
+1. open the conflictiong files and look for conflict maekes like this:
+    ```bash
+    <<<<<<< HEAD
+    Code from the current branch
+    =======
+    Code from the branch being merged
+    >>>>>>> feature
+    ```
+2. Edit thefile to keep the desired changes and remove the conflict markers.
+3. once resolved, stage the changes:
+    ```bash
+    git add filename
+    ```
+4. complete the merge by committing:
+    ```bash
+    git commit
+    ```
+## Deleting a branches
+After merging a branch and confirming that it is no longer needed, you can delete it to keep your repository clean. To delete a branch:
+- Loaclly:
+    ```bash
+    git branch -d feature
+    ```
+    If the brnah hasn't been merged yet and you still want to delete it, use -D(force delete):
+    ```bash
+    git branch -D feature
+    ```
+- Remotely(on GitHub):
+    ```bash
+    git push origin --delete feature
+    ```
