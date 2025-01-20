@@ -2,7 +2,7 @@
 date: 2025-01-19
 description: "Learn the essentials of Git and GitHub, including how to create a repository, understand the Git workflow, make commits, and work with remote and local repositories. This guide will help you get started with version control and manage your projects efficiently"
 image: "/images/git&github/thumbnail.png"
-lastmod: 2025-01-20
+lastmod: 2025-01-21
 showTableOfContents: True
 tags: ["Git", "GitHub", "VersionControl", "GitWorkflow", "GitCommit"]
 title: "Git & Github"
