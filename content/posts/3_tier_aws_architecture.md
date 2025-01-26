@@ -2,7 +2,7 @@
 date: 2025-01-21
 description: "This blog chronicles my journey as I work on deploying a Java application using AWS's 3-Tier Architecture. It includes daily progress updates, challenges faced, and solutions implemented throughout the project. The goal is to create a scalable and secure architecture, utilizing AWS EC2 instances, RDS, and Elastic Load Balancers to manage different layers of the application."
 image: "/images/AWS_3-Tier_Architecture/thumbnail.png"
-lastmod: 2025-01-22
+lastmod: 2025-01-26
 showTableOfContents: True
 tags: ["AWS", "Java", "3-Tier Architecture", "EC2", "RDS", "Elastic Load Balancer", "Deployment", "Cloud Computing"]
 title: "Deploying a Java Application on AWS 3-Tier Architecture"
@@ -62,3 +62,48 @@ sudo dnf install java-11-amazon-corretto
 After installing Java this way, everything worked as expected, and I was able to continue with my setup.
 
 This was the only major problem that I face today
+
+## Progress Update – 26th Jan 2025
+
+I’m making some real progress with learning cloud architecture. It was a pretty complicated mess until yesterday, but now things are starting to click. I'm currently working on replicating: ![aws-3tier-achicture](/images/AWS_3-Tier_Architecture/aws-3-tier-architecture.png)and although there’s a lot to absorb, I’m starting to understand the key concepts bit by bit.
+
+### Here’s where I’m at with the architecture:
+
+- **VPC (Virtual Private Cloud):**  
+  I’ve got a solid understanding of what a VPC is and how it fits into the larger AWS environment. It's essentially your private network in the cloud.
+
+- **Availability Zones and Subnets:**
+  I’ve learned how AWS divides regions into availability zones and how subnets are used within those zones to organize and secure network traffic.
+
+- **NAT Gateways:**  
+  Setting up NAT Gateways has been a key part of my learning. They allow instances in private subnets to access the internet without exposing them directly to the public.
+
+- **Load Balancers:**  
+  I’ve also gotten familiar with Load Balancers, which are crucial for distributing traffic across multiple EC2 instances to ensure high availability.
+
+Right now, I’ve created the private subnets and laid down the foundation of the network, but I still need to dive into the following to complete the architecture:
+
+- **Security Groups:**  
+  These will help secure my instances and manage network traffic between them.
+
+- **Auto Scaling:**  
+  I need to learn how auto-scaling groups will help manage the scaling of my application based on demand.
+
+- **Bastion Host:**  
+  A bastion host will be important for securely accessing instances in the private subnets.
+
+- **Transit Gateway:**  
+  This will be essential for managing network traffic between VPCs and connecting to on-premise networks.
+
+---
+
+### CI Pipeline
+
+Alongside this, I’ve also been learning about Continuous Integration (CI) pipelines. I plan to implement a CI pipeline with **Bitbucket**, **SonarQube**, and **JFrog Artifactory** to manage my build and deployment process. This is how I envision the workflow:
+
+1. **Bitbucket** for version control and code repository.
+2. **SonarQube** for static code analysis and ensuring code quality.
+3. **JFrog Artifactory** to store and manage build artifacts (like JARs or WARs).
+4. Finally, deploy those artifacts to an **EC2 instance** running my application.
+
+Once I have everything set up and deployed, I’ll document the process in a detailed step-by-step guide to explain each part and how everything fits together. It’s all coming together, and I’m excited to put everything into action.
