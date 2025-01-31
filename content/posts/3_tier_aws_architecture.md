@@ -107,3 +107,11 @@ Alongside this, I’ve also been learning about Continuous Integration (CI) pipe
 4. Finally, deploy those artifacts to an **EC2 instance** running my application.
 
 Once I have everything set up and deployed, I’ll document the process in a detailed step-by-step guide to explain each part and how everything fits together. It’s all coming together, and I’m excited to put everything into action.
+
+# Progress Update – 31st Jan 2025
+
+Unfortunately, I’ve had to pause the project for now. I was very close to completing the AWS 3-Tier Architecture setup, with only a couple of tasks remaining: setting up the Nginx server and configuring the CI pipeline. However, while working through the deployment, I made a manual NAT gateway setup, as I realized that using AWS’s managed NAT Gateway service would incur additional costs. Unfortunately, I was completely unaware that simply setting up a VPC (Virtual Private Cloud) would also lead to unexpected charges.
+
+This was a surprise, and given that I’m still learning, I need to take a step back and reassess my approach. The architecture was almost fully done—I had already set up VPCs, subnets, load balancers, and learned a lot about AWS services. The only tasks left were to implement the Nginx server to manage traffic and set up the CI pipeline for automating builds and deployments.
+
+Although this setback has been disappointing, it’s also been a valuable learning experience. I’ve gained a deeper understanding of cloud infrastructure and how different AWS services interact. I plan to revisit the project in the future once I’m more familiar with cost management and can fully navigate the challenges involved.
