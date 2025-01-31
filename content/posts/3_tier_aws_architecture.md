@@ -2,7 +2,7 @@
 date: 2025-01-21
 description: "This blog chronicles my journey as I work on deploying a Java application using AWS's 3-Tier Architecture. It includes daily progress updates, challenges faced, and solutions implemented throughout the project. The goal is to create a scalable and secure architecture, utilizing AWS EC2 instances, RDS, and Elastic Load Balancers to manage different layers of the application."
 image: "/images/AWS_3-Tier_Architecture/thumbnail.png"
-lastmod: 2025-01-26
+lastmod: 2025-01-31
 showTableOfContents: True
 tags: ["AWS", "Java", "3-Tier Architecture", "EC2", "RDS", "Elastic Load Balancer", "Deployment", "Cloud Computing"]
 title: "Deploying a Java Application on AWS 3-Tier Architecture"
